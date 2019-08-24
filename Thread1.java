@@ -15,9 +15,6 @@ public class Thread1 extends Thread
     
     static String path="C:\\Users\\Pranshu\\Documents\\NetBeansProjects\\09-07-19\\ServerFinal\\src\\java\\websocket\\server\\log4j.properties";
     static Properties p;
-   
-    
-    
     
   Random rand = new Random(); 
   private static final DecimalFormat df2 = new DecimalFormat("#.##");
@@ -41,16 +38,6 @@ public class Thread1 extends Thread
         
         String xyz=p.getProperty("threadtime");
         time=Long.parseLong(xyz);  
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         while(true)
         {
@@ -78,8 +65,8 @@ public class Thread1 extends Thread
             System.out.println();
            
             try {
-                //Thread.sleep(time);
-                Thread.sleep(3000);
+                Thread.sleep(time);
+                //Thread.sleep(3000);
             } catch (Exception e) {
                 System.out.println(e);
             }
